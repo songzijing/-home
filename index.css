@@ -1,0 +1,208 @@
+*{
+    margin:0 auto;
+    padding:0;
+}
+p{
+    font-size: .15rem;
+}
+html,body{
+    width:100%;
+    height:100%;
+}
+/*header*/
+header{
+    height: 1.2rem;
+    background:#ff8a00 ;
+}
+header ul{
+    display: flex;
+    list-style: none;
+    margin-top:-.4rem;
+}
+header ul li a{
+    text-decoration: none;
+}
+header ul li:first-child img{
+    width:1.5rem;
+    height:auto;
+    margin-top:.5rem;
+}
+header ul li:last-child img{
+    width:.25rem;
+    height:auto;
+    margin-top:.65rem;
+}
+/*main*/
+/*首屏banner图*/
+.bnrDiv{
+    position:relative;
+}
+.banner{
+    width:100%;
+    height:auto;
+}
+/*搜索框*/
+.sea{
+    position:relative;
+    bottom:.3rem;
+    width:90%;
+}
+.sea input{
+    width:90%;
+    padding:.05rem 0 .05rem .3rem;
+    position:absolute;
+    bottom:.1rem;
+    left:-.05rem;
+    font-size: .16rem;
+}
+.sea img{
+    width:.25rem;
+    height:.25rem;
+    position:absolute;
+    bottom:.15rem;
+    z-index:1;
+}
+/*首屏导航*/
+.indexNav ul{
+    display: flex;
+    list-style: none;
+    background:#ff8a00  ;
+    margin-top:-.6rem;
+}
+.indexNav a{
+    text-decoration:none;
+}
+.indexNav img{
+    width:80%;
+    height:auto;
+    padding-left:.1rem;
+}
+.indexNav li p{
+    color:#fff;
+    text-align: center;
+    margin:-.15rem 0 .1rem 0;
+}
+
+/*热门房源*/
+h2{
+    font-size: .2rem;
+}
+h3{
+    font-size: .15rem;
+    overflow: hidden;
+}
+.hot{
+    height:.5rem;
+    background:#ff8a00 ;
+    color:#fff;
+    padding:.1rem .2rem;
+}
+/*热门房源列表*/
+.hotList{
+   height:100%;
+    overflow: hidden;
+}
+.hotList h2,.hotList h3{
+    color:black;
+    padding-top:.05rem;
+}
+.hotList a{
+    text-decoration:none;
+    display: flex;
+    margin:.1rem .2rem 0 .1rem;
+}
+.hotList a img{
+    width:1rem;
+    height:1rem;
+}
+.hotList a div:last-child{
+    padding-left:.1rem;
+    overflow: hidden;
+}
+.hotList a div:last-child h2{
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+}
+.hotList a p{
+    padding-top:.05rem;
+    overflow: hidden;
+}
+.hotList a p .mj{
+    float:right;
+}
+.hotList a .pic{
+    float:right;
+    color:#ff8a00;
+}
+.hotList .home span{
+    display: inline-block;
+    padding: .02rem;
+    background: #f1f1f1;
+}
+
+/*热门关注*/
+ .gz{
+     color: #8b8b8b;
+     font-size: .15rem;
+ }
+ .gz h2{
+     width:100%;
+     margin: .1rem 0;
+     display:flex;
+ }
+ .gz h2 span:first-child{
+     color:#ff8a00;
+     padding-bottom: .1rem;
+     width:33%;
+     padding-left:.3rem;
+    border-bottom: 2px solid #ff8a00;
+ }
+.gz hr{
+    margin-top:-.1rem;
+}
+ .gzList{
+     display:flex;
+ }
+.gzList ul{
+    list-style:none;
+}
+.gzList li{
+    padding:.05rem;
+}
+
+
+ /*footer*/
+footer{
+    background: #444444;
+}
+p,img{
+    color: #bebebe;
+}
+.footBig{
+    text-align: center;
+    margin-top:.2rem;
+}
+.footBox{
+    display: flex;
+}
+.footBox div{
+    display: flex;
+    position:relative;
+}
+.footBox div p{
+    margin-left:.15rem;
+}
+.footBox img{
+    width:.3rem;
+    height:.3rem;
+    position:relative;
+    top:.15rem;
+}
+footer p{
+    padding:.1rem 0;
+}
+footer .sj,hr{
+    margin: 0 .2rem;
+}
+

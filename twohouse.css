@@ -1,0 +1,296 @@
+*{
+    margin:0 auto;
+    padding:0;
+}
+p{
+    font-size: .15rem;
+    margin-top:.1rem;
+}
+h2{
+    font-size: .18rem;
+    margin-top:.1rem;
+}
+h3{
+    font-size: .15rem;
+    margin-top:.1rem;
+}
+ul li {
+    font-size: .18rem;
+    margin-top:.1rem;
+}
+html,body{
+    width:100%;
+    height:100%;
+}
+/*header*/
+header{
+    height: 1.2rem;
+    background:#ff8a00 ;
+}
+header ul{
+    display: flex;
+    list-style: none;
+    margin-top:-.4rem;
+}
+header ul li a{
+    text-decoration: none;
+}
+header ul li:first-child img{
+    width:1.5rem;
+    height:auto;
+    margin-top:.5rem;
+}
+header ul li:last-child img{
+    width:.25rem;
+    height:auto;
+    margin-top:.65rem;
+}
+/*main*/
+/*banner*/
+.swiper-container img{
+    height:100%;
+    width:100%;
+}
+.swiper-container{
+    height:1.5rem;
+    overflow: hidden;
+}
+.p{
+    display: flex;
+    justify-content:space-around;
+    position:relative;
+    top:-.5rem;
+    z-index:1;
+}
+.p span:first-child{
+    display: inline-block;
+    padding:.03rem .05rem;
+    border: 1px solid #ccc;
+    border-radius: .03rem;
+    color:#ccc;
+}
+.p span:last-child{
+    display: inline-block;
+    padding:.03rem .1rem;
+    border-radius: .1rem;
+    color:#ccc;
+    background-color: black;
+    opacity:.5;
+}
+.ccc{
+    margin-top: .18rem;
+    height:.2rem;
+    background-color: #e3e3e3;
+}
+.info{
+   margin:-.3rem .2rem 0;
+}
+.info h3{
+    font-size: .16rem;
+    overflow: hidden;
+}
+.info h3 .r{
+    color:red;
+    font-size: .18rem;
+}
+.info .l img{
+    width:.15rem;
+    height:.25rem;
+}
+.info .l{
+    float:right;
+    margin-right: .1rem;
+}
+.info .home span{
+    display: inline-block;
+    padding: .02rem;
+    background: #f1f1f1;
+}
+
+/*户型*/
+.hx ul{
+    margin:0 .2rem;
+    list-style: none;
+}
+.hx ul hr{
+    margin:.1rem -.1rem;
+}
+.hx li{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.hx li span{
+    color:#999;
+}
+.hx li span:nth-child(2){
+    margin-left:.4rem;
+}
+.hx li:nth-child(3) span:nth-child(2){
+    margin-left:.45rem;
+}
+.hx li:nth-child(5) span:nth-child(2){
+    margin-left:.62rem;
+}
+.hx li:nth-child(8) span:nth-child(2){
+    margin-left:.4rem;
+}
+.fyInfo{
+    font-size: .18rem;
+    text-align: center;
+}
+.right img{
+    width:.1rem;
+    height:.15rem;
+}
+.right{
+    float:right;
+    margin-right: .1rem;
+}
+
+/*房源特色*/
+ .fyh2,.fyts .hj{
+     margin:.15rem .2rem;
+     color:black;
+ }
+.fyh2{
+    color:#ff8a00;
+}
+/*户型分间*/
+.hxfj{
+    display:flex;
+    margin:.1rem 0 -.1rem .2rem;
+    overflow: hidden;
+}
+.hxfj img{
+    width:1rem;
+    height:1rem;
+}
+.hxBox{
+    padding-left:.1rem;
+    margin-right:.1rem;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.hh #h{
+    color:#ff8a00;
+}
+.hxfj div h3{
+    text-overflow:ellipsis;
+    overflow: hidden;
+    white-space:nowrap;
+}
+/*对口学校*/
+.xx ul{
+    margin:0 .2rem;
+    list-style: none;
+}
+.xx ul hr{
+    margin:.1rem -.1rem;
+}
+.xx li span{
+    color:#999;
+}
+.xx li{
+    text-overflow:ellipsis;
+    overflow: hidden;
+    white-space:nowrap;
+}
+.dkxx{
+    margin:.15rem .2rem;
+}
+
+/*推荐房源*/
+.hotList h2,.hotList h3{
+    color:black;
+}
+.hotList{
+    text-decoration:none;
+    display: flex;
+    margin:.1rem 0 0 .1rem;
+    overflow: hidden;
+}
+.hotList img{
+    width:1.2rem;
+    height:1.2rem;
+}
+.hotList div:last-child{
+    padding-left:.1rem;
+    margin-top:-.1rem;
+    text-overflow:ellipsis;
+    overflow: hidden;
+    white-space:nowrap;
+}
+.hotList div:last-child h2{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space:nowrap;
+}
+.hotList p .mj{
+    float:right;
+    margin-right:.1rem;
+}
+.hotList .pic{
+    float:right;
+    margin-right:.1rem;
+    color:#ff8a00;
+}
+.hotList .home span{
+    display: inline-block;
+    padding: .02rem;
+    background: #f1f1f1;
+}
+/*位置及周边*/
+#container{
+    height:3rem;
+    /*border:1px solid #ccc;*/
+    margin:.1rem;
+}
+/*推荐理由*/
+.tj{
+   background-color: #dddddd;
+    margin:-.2rem .1rem 0;
+}
+.tj p{
+   color:#999;
+    padding:.05rem .1rem;
+}
+.hr{
+    margin-top:.2rem;
+}
+
+
+/*footer*/
+footer{
+    background: #444444;
+}
+p,img{
+    color: #bebebe;
+}
+.footBig{
+    text-align: center;
+    margin-top:.2rem;
+}
+.footBox{
+    display: flex;
+}
+.footBox div{
+    display: flex;
+    position:relative;
+}
+.footBox div p{
+    margin-left:.15rem;
+}
+.footBox img{
+    width:.3rem;
+    height:.3rem;
+    position:relative;
+    top:.25rem;
+}
+footer p{
+    padding:.1rem 0;
+}
+footer .sj,hr{
+    margin: 0 .2rem;
+}

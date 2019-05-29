@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>找房无忧</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <header>
+     <ul>
+         <li>
+             <img src="img/index/logo.jpg" alt="">
+         </li>
+         <li>
+             <a href="login.html"><img src="img/index/my.jpg" alt=""></a>
+             <a href=""><img src="img/index/xiazai.jpg" alt=""></a>
+         </li>
+     </ul>
+  </header>
+
+<main>
+    <!--首屏banner图-->
+    <div class="bnrDiv">
+        <img src="img/index/banner1_comp.png" alt="" class="banner">
+        <div class="sea">
+            <img src="img/index/seach.jpg" alt="">
+            <input type="text" placeholder="输入小区或商圈名开始找房咯！">
+        </div>
+    </div>
+    <!--首屏导航-->
+    <nav class="indexNav">
+        <ul>
+            <li>
+                <a href="twohouse.html">
+                    <img src="img/index/index_03.png" alt="">
+                    <p>二手房</p>
+                </a>
+            </li>
+             <li>
+                 <a href="searc.html">
+                     <img src="img/index/index_05.png" alt="">
+                     <p>新房</p>
+                 </a>
+            </li>
+             <li>
+                 <a href="searc.html">
+                     <img src="img/index/index_07.png" alt="">
+                     <p>租房</p>
+                 </a>
+            </li>
+             <li>
+                 <a href="searc.html">
+                     <img src="img/index/index_09.png" alt="">
+                     <p>卖房</p>
+                 </a>
+
+            </li>
+        </ul>
+    </nav>
+    <!--首屏banner图-->
+    <img src="img/index/banner2_comp.png" alt="" class="banner">
+
+    <!--热门房源-->
+    <header class="hot">
+        <h2>热门房源</h2>
+        <h3>Hot house</h3>
+    </header>
+    <section>
+        <!--热门列表-->
+        <ul class="hotList"></ul>
+        <!--热门关注-->
+        <div class="gz">
+            <h2>
+                <span>热门关注</span>
+                <span>友情链接</span>
+            </h2>
+            <hr>
+            <div class="gzList">
+                <ul>
+                    <li>北京二手房</li>
+                    <li>北京二手房价</li>
+                    <li>海淀日租房</li>
+                    <li>朝阳新房</li>
+                </ul>
+                <ul>
+                    <li>北京找房无忧</li>
+                    <li>青年家园</li>
+                    <li>免税房源</li>
+                    <li>满五年唯一免税</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</main>
+<footer>
+   <p class="sj">北京找房无忧 > 首页</p>
+    <hr>
+    <div class="footBig">
+        <div class="footBox">
+            <div>
+                <img src="img/index/apple.png" alt="">
+                <p>
+                    iphone
+                    <br>
+                    客户端
+                </p>
+            </div>
+            <div>
+                <img src="img/index/android.png" alt="">
+                <p>
+                    iphone
+                    <br>
+                    客户端
+                </p>
+            </div>
+        </div>
+      <p>北京找房无忧房地产经纪公司</p>
+      <p>网络经营许可证京ICP备20160812号</p>
+
+    </div>
+
+</footer>
+</body>
+</html>
+<script src="js/rem.js"></script>
+<script src="js/zepto.js"></script>
+<script src="js/touch.js"></script>
+<script src="js/doT.min.js"></script>
+<script id="a" type="text-dot-template">
+    {{~it.indexList:value:index}}
+    <li>
+        <a href="">
+            <div>
+                <img src="{{=value.img}}" alt="">
+            </div>
+            <div>
+                <h2>{{=value.h2}}</h2>
+                <h3>
+                    {{=value.h3}}
+                    <span class="pic">{{=value.pic}}</span>
+                </h3>
+                <p>
+                    {{=value.dz}}
+                    <span class="mj">{{=value.mj}}</span>
+                </p>
+                <p class="home">
+                    {{~value.type:val:idt}}
+                    <span>{{=val}}</span>
+                    {{~}}
+                </p>
+            </div>
+        </a>
+        <hr>
+    </li>
+    {{~}}
+</script>
+<script>
+    $.ajax({
+        url:"home.json",
+        success:function(res){
+            var b=doT.template($('#a').text());
+            $('.hotList').html(b(res));
+        },
+        error:function(err){
+            throw err;
+        }
+    })
+</script>

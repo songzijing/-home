@@ -1,0 +1,347 @@
+*{
+    margin:0 auto;
+    padding:0;
+}
+p{
+    font-size: .15rem;
+}
+html,body{
+    width:100%;
+    height:100%;
+}
+/*header*/
+header{
+    height: 1.2rem;
+    background:#ff8a00 ;
+}
+header ul{
+    display: flex;
+    list-style: none;
+    margin-top:-.5rem;
+}
+header ul li a{
+    text-decoration: none;
+}
+header ul li:first-child img{
+    width:1.5rem;
+    height:auto;
+}
+header ul li:last-child img{
+    width:.25rem;
+    height:auto;
+
+}
+header ul li:last-child{
+    margin-top:-.05rem;
+}
+/*main*/
+ /*搜索*/
+ .out{
+     width:100%;
+     background: #eeeeee;
+     height:.5rem;
+ }
+ .out span{
+     font-size: .15rem;
+     position:relative;
+ }
+ .out input{
+     width:90%;
+     padding:.06rem;
+     font-size: .16rem;
+     position:absolute;
+     margin-left:.1rem;
+     margin-top:.1rem;
+ }
+.out img{
+    width:.2rem;
+    height:.2rem;
+    position:absolute;
+    right:.2rem;
+    margin-top:.15rem;
+}
+ .out span{
+     display:inline-block;
+     position:absolute;
+     right:.55rem;
+     margin-top:.15rem;
+     height:.23rem;
+     width:.01rem;
+     background-color: #dcdcdc;
+ }
+
+/*区域*/
+.tabList ul{
+    display:flex;
+    list-style:none;
+    margin:-.75rem .1rem 0 0rem;
+    position:relative;
+    width:100%;
+}
+ .tabList a{
+     text-decoration:none;
+     font-size: .18rem;
+     color:black;
+ }
+ .qy{
+    color: #6f6f6f;
+     font-size: .15rem;
+ }
+.tabList li .span{
+    display: inline-block;
+    width:.01rem;
+    height:.2rem;
+    background-color: #6f6f6f;
+    margin-top:.05rem;
+}
+
+.tabList li .on{
+    color:#ff8a00;
+}
+/*点击切换*/
+/*区域*/
+.tabList .fxDivqy{
+    width:100%;
+    position:absolute;
+    top:2.1rem;
+    left:0;
+    background-color: #f1f1f1;
+}
+.tabList .fxDivqy ul{
+    display:flex;
+    flex-direction:column;
+    background-color: #f1f1f1;
+    width:100%;
+    list-style: none;
+
+}
+.tabList .fxDivqy ul li{
+    display: flex;
+    width:100%;
+    margin-top:.1rem;
+    height:.2rem;
+    position:relative;
+    top:-.1rem;
+    left:.2rem;
+}
+.tabList .fxDivqy ul li a{
+    flex:1;
+}
+
+
+/*价格*/
+.tabList .fxDivpic{
+    background-color: #f1f1f1;
+    width:100%;
+    position:absolute;
+    top:2.1rem;
+    left:0;
+}
+.tabList .fxDivpic ul{
+    display:flex;
+    flex-direction:column;
+    background-color: #f1f1f1;
+    width:100%;
+    list-style: none;
+
+}
+.tabList .fxDivpic ul li a{
+    font-size: 0.15rem;
+    color: #484848;
+}
+.tabList .fxDivpic ul li{
+    margin-top:.1rem;
+    height:.2rem;
+    position:relative;
+    top:-.9rem;
+    left:-1rem;
+}
+.tabList .fxDivpic ul li:last-child{
+    margin:.1rem 0;
+    position:relative;
+    left:.07rem;
+}
+.zdy{
+   margin-left:1.1rem;
+}
+.zdy span{
+    margin-left:.1rem;
+    display: inline-block;
+    border: 1px solid #ccc;
+    padding:.02rem;
+    background-color: #eeeeee;
+}
+
+/*房型*/
+.tabList .fxDiv{
+    background-color: #f1f1f1;
+    width:100%;
+    position:absolute;
+    top:2.1rem;
+    left:0;
+}
+.tabList .fxDiv ul{
+    display:flex;
+    flex-direction:column;
+    background-color: #f1f1f1;
+    width:100%;
+    list-style: none;
+
+}
+.tabList .fxDiv ul li{
+    margin-top:.1rem;
+    height:.2rem;
+    position:relative;
+    top:-.9rem;
+    left:-1rem;
+}
+.tabList .fxDiv ul li:last-child{
+    margin:.1rem 0;
+    width:100%;
+}
+.btnQd{
+    border:1px  solid #ff8a00;
+    position:relative;
+    left:1rem;
+    font-size: .18rem;
+    width:100%;
+    padding:.05rem 0;
+    background-color:#ff8a00 ;
+    color:#fff;
+}
+
+
+
+/*更多*/
+.tabList .xs{
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:1.35rem;
+    left:0;
+    background-color: #f1f1f1;
+}
+.tabList .xs h2{
+    margin-left:.1rem;
+}
+.tabList .xs ul{
+    list-style: none;
+    display:flex;
+    flex-wrap:wrap;
+    height:.2rem;
+}
+.xs div{
+    padding-bottom: .1rem;
+    height:100%;
+    background-color: #f1f1f1;
+}
+.tabList .xs ul li{
+    margin-top:.1rem;
+    width:25%;
+    box-sizing:border-box;
+   height:100%;
+
+}
+.tabList .xs ul a{
+    margin:.1rem 0;
+    text-align: center;
+    font-size: .15rem;
+    display: inline-block;
+    width: 100%;
+    height:100%;
+    border: 1px solid #9f9f9f;
+}
+
+.yc{
+   display: none;
+}
+
+
+
+
+
+
+
+
+
+/*热门房源列表*/
+h2{
+    font-size: .2rem;
+}
+h3{
+    font-size: .15rem;
+    overflow: hidden;
+}
+.hotList{
+    height:100%;
+    overflow: hidden;
+}
+.hotList h2,.hotList h3{
+    color:black;
+    padding-top:.05rem;
+}
+.hotList a{
+    text-decoration:none;
+    display: flex;
+    margin:.1rem .2rem 0 .1rem;
+}
+.hotList a img{
+    width:1rem;
+    height:1rem;
+}
+.hotList a div:last-child{
+    padding-left:.1rem;
+    overflow:hidden;
+}
+.hotList a div:last-child h2{
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+}
+.hotList a p{
+    padding-top:.05rem;
+    overflow: hidden;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+}
+.hotList a .pic{
+    color:#ff8a00;
+}
+.hotList hr{
+    background-color:#ff8a00;
+}
+
+
+/*footer*/
+footer{
+    background: #444444;
+}
+p,img{
+    color: #bebebe;
+}
+.footBig{
+    text-align: center;
+    margin-top:.2rem;
+}
+.footBox{
+    display: flex;
+}
+.footBox div{
+    display: flex;
+    position:relative;
+}
+.footBox div p{
+    margin-left:.15rem;
+}
+.footBox img{
+    width:.3rem;
+    height:.3rem;
+    position:relative;
+    top:.15rem;
+}
+footer p{
+    padding:.1rem 0;
+}
+footer .sj,hr{
+    margin: 0 .2rem;
+}
